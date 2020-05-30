@@ -9,5 +9,10 @@ Ans:
     git push -f origin master  
     git gc --aggressive --prune=all 
     
-Q2)
+Q2)Preventing push to upstream repository
 Ans:
+	A way to avoid pushing into a repository is providing a dummy url address to the repository. 
+	This is accomplished by issuing the git command:
+	git remote set-url --push upstream no_push
+	
+	Another way is using hooks.
