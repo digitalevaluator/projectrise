@@ -16,3 +16,11 @@ Ans:
 	git remote set-url --push upstream no_push
 	
 	Another way is using hooks.
+
+Q3)Fix Git Detached head issue with master.
+Ans: https://stackoverflow.com/questions/10228760/fix-a-git-detached-head
+     mostly small steps like this will fix it 
+     a)git reset --hard
+     b)git pull
+     c)git checkout master    
+             
