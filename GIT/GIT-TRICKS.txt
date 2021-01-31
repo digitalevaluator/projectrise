@@ -5,10 +5,16 @@ Ans:
     git add -A  
     git commit -m "Initial Commit"
     git branch -D master  
-    git branch -m master  
+    git branch -m master  #rename the mastyer
     git push -f origin master  
     git gc --aggressive --prune=all 
     
+Another Way:
+    git init
+    git add *
+    git commit -m 'Initial commit'
+    git remote add origin [repo_address]
+    git push --mirror --force
 Q2)Preventing push to upstream repository
 Ans:
 	A way to avoid pushing into a repository is providing a dummy url address to the repository. 
